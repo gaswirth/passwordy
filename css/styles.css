@@ -19,7 +19,28 @@
    Author's styles
    ---------------------------------------------------------*/
     body {
-   
+		background: #00cbff;
+		color: white;
+		font-family: "Abel", sans-serif;
+		font-size: 32px;
+		text-align: center;
+    }
+    
+    h1 {
+	    font-family: "Pacifico", cursive;
+	    font-weight: normal;
+	    font-size: 3em;
+    }
+    
+    .wrap {
+	    width: 100%;
+	    height: auto;
+	    margin: 0 auto;
+	    position: relative;
+    }
+    
+    .responses > div {
+		display: none;
     }
 
 
