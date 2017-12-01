@@ -7,7 +7,7 @@
 
 var users = {
 	'bob'  : 'cat',
-	'sam'  : 'brook',
+	'leslie'  : 'uncle',
 	'mona' : 'lisa'
 };
 	
@@ -29,15 +29,46 @@ $(document).ready(function(){
 		// Check inside the `users` array we set up above...
 		if ( users[myUsername] === myPassword ) {
 
-			// If we have a match:
-			$("#success").slideDown();
+			// Yay, successful login! Show a success message.
+			$(".success").slideDown('slow', function(){
+				
+				// Now, check which user we have and show them the
+				// correct info.
+				
+				// VERSION 1, simple to read
+				switch (myUsername) {
+					case "bob":
+						$(".user-bob").delay(1000).addClass("logged-in");
+						break;
+					
+					case "leslie":
+						$(".user-leslie").delay(1000).addClass("logged-in");
+						break;
+					
+					case "mona":
+						$(".user-mona").delay(1000).addClass("logged-in");
+						break;
+					
+					default:
+						$(".nologin").fadeIn('fast');
+				}
+				
+				// VERSION 2, less code but harder to read
+				// $(".user" + myUsername).delay(1000).addClass(".logged-in");
+				
+			});
 			
 
-		} else {
+		} else { // Boo, bad user/password. Show a fail message.
 			
-			// If there's mo match:
-			$("#failure").slideDown();
-			
+			$(".failure").slideDown('slow');
+		
 		}
+	});
+	
+	$(".reset").click(function(e){
+		e.preventDefault();
+		
+		$("#responses *").hide();
 	});
 });

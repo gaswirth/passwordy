@@ -30,19 +30,60 @@
 	    font-family: "Pacifico", cursive;
 	    font-weight: normal;
 	    font-size: 3em;
+	    margin-bottom: 1rem;
     }
     
     .wrap {
-	    width: 100%;
+	    width: 100%;	
 	    height: auto;
 	    margin: 0 auto;
 	    position: relative;
     }
     
-    .responses > div {
+    .users-container {
+	    width: auto;
+	    display: inline-block;
+	    font-size: 0.6em;
+	    margin: 1em auto;
+    }
+    
+    .users {
+	    list-style: none;
+	    text-align: center;
+	    padding: 1em;
+	    background: #9be0ff;
+	    border: 1px solid #00acd0;
+	    border-radius: 2px;
+	    color: gray;
+	    margin: 0;
+    }
+    
+    #responses > div {
 		display: none;
     }
-
+    
+    .reset {
+	    font-size: 0.6em;
+	    display: inline-block;
+	    margin: 1em auto;
+    }
+    
+    .user-area {
+	    height: 0;
+	    transition: height 0.35s ease;
+	    overflow: hidden;
+    }
+    
+    .user-area.logged-in {
+	    height: auto;
+    }
+    
+	.user-area img {
+	    width: auto;
+	    height: auto;
+	    display: block;
+	    margin: 0 auto 1em auto;
+    }
 
     
 /* ---------------------------------------------------------

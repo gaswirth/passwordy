@@ -36,40 +36,64 @@
 	
 	<main role="main">
 	
-	<section>
+		<section>
 	
-	<!-- The <article> element can be used to enclose content that still makes sense on its own and is therefore "reusable" -->
-	<div id="intro">
+			<!-- The <article> element can be used to enclose content that still makes sense on its own and is therefore "reusable" -->
+			<div id="intro">
+			
+			<h3>(An extremely fancy and important website)</h3>
+			
+			</article>
+			
+			<!-- The <article> element can be used to enclose content that still makes sense on its own and is therefore "reusable" -->
+			<article id="login-container">
+				
+				<div class="users-container">
+					<p><em>Usernames/password combos:</em><br /></p>
+					<ul class="users">
+						<li>bob  --> cat</li>
+						<li>leslie  --> uncle</li>
+						<li>mona --> lisa</li>
+					</ul>
+				</div>
+				<p>Log it in, friendo:</p>
+				
+				<form id="loginform" name="loginform">
+					<input type="text" id="username" name="username" class="login-field login-name" required autofocus placeholder="User Name" />
+					<input type="password" id="password" name="password" class="login-field login-password" required placeholder="Password" /> 
+					<input type="submit" id="login" value="Submit" />
+				</form>
+				
+			</article>
 	
-	<h3>(An extremely fancy and important website)</h3>
-	
-	</article>
-	
-	<!-- The <article> element can be used to enclose content that still makes sense on its own and is therefore "reusable" -->
-	<article id="login-container">
-						
-						<p>Log it in, friendo:</p>
-	
-	<form id="loginform" name="loginform">
-		<input type="text" id="username" name="username" class="login-field login-name" required autofocus placeholder="User Name" />
-		<input type="password" id="password" name="password" class="login-field login-password" required placeholder="Password" /> 
-		<input type="submit" id="login" value="Submit" />
-	</form>
-	
-	</article>
-	
-	</section>
+		</section>
 	
 	</main>
 	
-	<div class="responses">
-		<div id="success">
+	<div id="responses">
+		<div class="success">
 			<p>I have literally never been happier to see you.</p>
 		</div>
 		
-		<div id="failure">
-			<p>Get out of my SIGHT.</p>
+		<div class="failure">
+			<p>Don't know you go away bye.</p>
 		</div>
+	</div>
+	<div id="user-areas">
+		<!-- User information: -->
+		<div class="user-bob user-area">
+			silly image coming soon
+		</div>
+		
+		<div class="user-leslie user-area">
+			silly image coming soon
+		</div>
+		
+		<div class="user-mona user-area">
+			<img src="multimedia/monsterlisa.jpg" alt="Mona Lisa" />
+		</div>
+		
+		<a class="reset">(Reset)</a>
 	</div>
 	</div>
 	
