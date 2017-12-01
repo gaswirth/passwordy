@@ -60,12 +60,14 @@
     
     #responses > div {
 		display: none;
+		margin-top: 2em;
     }
     
     .reset {
 	    font-size: 0.6em;
 	    display: inline-block;
 	    margin: 1em auto;
+	    cursor: pointer;
     }
     
     .user-area {
