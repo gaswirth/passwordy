@@ -53,8 +53,8 @@ $(document).ready(function(){
 						$(".nologin").fadeIn('fast');
 				}
 				
-				// VERSION 2, less code but harder to read
-				// $(".user" + myUsername).delay(1000).addClass(".logged-in");
+				// VERSION 2, same thing in less code, but more difficult to read!
+				// $(".user-" + myUsername).delay(1000).addClass("logged-in");
 				
 			});
 			
