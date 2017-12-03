@@ -16,6 +16,8 @@
 
 <!-- Include the site stylesheet -->
 <link href="css/styles.css" rel="stylesheet" media="all">
+<link href="https://fonts.googleapis.com/css?family=Abel|Pacifico" rel="stylesheet">
+
 
 <!-- jQuery and Scriptage-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -41,7 +43,7 @@
 			<!-- The <article> element can be used to enclose content that still makes sense on its own and is therefore "reusable" -->
 			<div id="intro">
 			
-			<h3>(An extremely fancy and important website)</h3>
+			<h3>(A very fancy and important website)</h3>
 			
 			</article>
 			
@@ -59,9 +61,9 @@
 				<p>Log it in, friendo:</p>
 				
 				<form id="loginform" name="loginform">
-					<input type="text" id="username" name="username" class="login-field login-name" required autofocus placeholder="User Name" />
-					<input type="password" id="password" name="password" class="login-field login-password" required placeholder="Password" /> 
-					<input type="submit" id="login" value="Submit" />
+					<input type="text" id="username" name="username" class="login-field login-text-field login-name" required autofocus placeholder="User Name" />
+					<input type="password" id="password" name="password" class="login-field login-text-field login-password" required placeholder="Password" /> 
+					<input type="submit" id="login" class="login-submit login-field" value="Submit" />
 				</form>
 				
 			</article>
@@ -76,21 +78,33 @@
 		</div>
 		
 		<div class="failure">
-			<p>Don't know you go away bye.</p>
+			<figure>
+				<figcaption>Noooope</figcaption>
+				<img src="multimedia/badcat.jpg" alt="bad kitty" />
+			</figure>
 		</div>
 	</div>
 	<div id="user-areas">
 		<!-- User information: -->
 		<div class="user-bob user-area">
-			silly image coming soon
+			<figure>
+				<figcaption>Hi, Bob!</figcaption>
+<!-- 				<img src="multimedia/monsterlisa.jpg" alt="Mona Lisa" /> -->
+			</figure>
 		</div>
 		
 		<div class="user-leslie user-area">
-			silly image coming soon
+			<figure>
+				<figcaption>Hi, Leslie!</figcaption>
+<!-- 				<img src="multimedia/monsterlisa.jpg" alt="Mona Lisa" /> -->
+			</figure>
 		</div>
 		
 		<div class="user-mona user-area">
-			<img src="multimedia/monsterlisa.jpg" alt="Mona Lisa" />
+			<figure>
+				<figcaption>Hi, Mona!</figcaption>
+				<img src="multimedia/monsterlisa.jpg" alt="Mona Lisa" />
+			</figure>
 		</div>
 		
 		<a class="reset">(Reset)</a>

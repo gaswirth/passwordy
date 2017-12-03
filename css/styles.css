@@ -40,11 +40,16 @@
 	    position: relative;
     }
     
+    #intro h3 {
+	    font-size: 1em;
+	    margin-top: 0.25em;
+    }
+    
     .users-container {
 	    width: auto;
 	    display: inline-block;
 	    font-size: 0.6em;
-	    margin: 1em auto;
+	    margin: 0 auto;
     }
     
     .users {
@@ -53,7 +58,7 @@
 	    padding: 1em;
 	    background: #9be0ff;
 	    border: 1px solid #00acd0;
-	    border-radius: 2px;
+	    border-radius: 5px;
 	    color: gray;
 	    margin: 0;
     }
@@ -80,11 +85,39 @@
 	    height: auto;
     }
     
-	.user-area img {
+	.user-area img,
+	.failure img {
 	    width: auto;
 	    height: auto;
 	    display: block;
 	    margin: 0 auto 1em auto;
+    }
+    
+    .login-field {
+	    border-radius: 5px;
+    }
+    
+    .login-text-field {
+	    border: 4px solid white;
+		transition: border-color 0.35s ease;
+    }
+    
+    .login-text-field:focus {
+	    border-color: #9be0ff;
+    }
+    
+    .login-submit {
+	    background: #9be0ff;
+	    transition: all 0.35s ease;
+	    border: 4px solid #00acd0;
+	    line-height: 1.4;
+	    cursor: pointer;
+    }
+    
+    .login-submit:hover,
+    .login-submit:active {
+	    background: #00acd0;
+	    color: white;
     }
 
     
