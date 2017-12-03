@@ -51,17 +51,17 @@
 			<article id="login-container">
 				
 				<div class="users-container">
-					<p><em>Usernames/password combos:</em><br /></p>
-					<ul class="users">
-						<li>bob  --> cat</li>
-						<li>leslie  --> uncle</li>
-						<li>mona --> lisa</li>
-					</ul>
+					<p><a href="#" class="expand-users">Usernames/passwords <span class="tri">&rtri;</span></a></p>
+					<div class="users-list-wrapper">
+						<ul class="users">
+							<li>bob  --> cat</li>
+							<li>leslie  --> uncle</li>
+							<li>mona --> lisa</li>
+						</ul>
+					</div>
 				</div>
-				<p>Log it in, friendo:</p>
-				
 				<form id="loginform" name="loginform">
-					<input type="text" id="username" name="username" class="login-field login-text-field login-name" required autofocus placeholder="User Name" />
+					<input type="text" id="username" name="username" class="login-field login-text-field login-name" required autofocus placeholder="Username" />
 					<input type="password" id="password" name="password" class="login-field login-text-field login-password" required placeholder="Password" /> 
 					<input type="submit" id="login" class="login-submit login-field" value="Submit" />
 				</form>
@@ -73,10 +73,6 @@
 	</main>
 	
 	<div id="responses">
-		<div class="success">
-			<p>I have literally never been happier to see you.</p>
-		</div>
-		
 		<div class="failure">
 			<figure>
 				<figcaption>Noooope</figcaption>
@@ -106,8 +102,6 @@
 				<img src="multimedia/monsterlisa.jpg" alt="Mona Lisa" />
 			</figure>
 		</div>
-		
-		<a class="reset">(Reset)</a>
 	</div>
 	</div>
 	
