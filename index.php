@@ -43,7 +43,7 @@
 			<!-- The <article> element can be used to enclose content that still makes sense on its own and is therefore "reusable" -->
 			<div id="intro">
 			
-			<h3>(A very fancy and important website)</h3>
+			<h3>(A very fancy website with 3 users)</h3>
 			
 			</article>
 			
@@ -54,7 +54,7 @@
 					<p><em>Usernames/password combos:</em><br /></p>
 					<ul class="users">
 						<li>bob  --> cat</li>
-						<li>leslie  --> uncle</li>
+						<li>sally  --> field</li>
 						<li>mona --> lisa</li>
 					</ul>
 				</div>
@@ -93,9 +93,9 @@
 			</figure>
 		</div>
 		
-		<div class="user-leslie user-area">
+		<div class="user-sally user-area">
 			<figure>
-				<figcaption>Hi, Leslie!</figcaption>
+				<figcaption>Hi, sally!</figcaption>
 <!-- 				<img src="multimedia/monsterlisa.jpg" alt="Mona Lisa" /> -->
 			</figure>
 		</div>
