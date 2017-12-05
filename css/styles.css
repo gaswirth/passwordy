@@ -8,8 +8,8 @@
    
     }
     /* Default link styling */
-    a:link { color:#0271fb; }
-    a:visited { color:#bd02fb; }
+    a:link { color:#fffd8e; text-decoration: none;}
+/*     a:visited { color:#bd02fb; } */
     a:hover, a:focus { color:#000; }
     a:active { color:#fb0e02; }
     
@@ -52,6 +52,23 @@
 	    margin: 0 auto;
     }
     
+    .users-list-wrapper {
+	    display: none;
+	    overflow: hidden;
+	    position: relative;
+	    padding: 0;
+	    margin: 0;
+    }
+    
+    .tri {
+	    display: inline-block;
+	    transition: transform 0.35s ease;
+    }
+    
+    .tri.active {
+	    transform: rotate(90deg);
+    }
+    
     .users {
 	    list-style: none;
 	    text-align: center;
@@ -66,13 +83,6 @@
     #responses > div {
 		display: none;
 		margin-top: 2em;
-    }
-    
-    .reset {
-	    font-size: 0.6em;
-	    display: inline-block;
-	    margin: 1em auto;
-	    cursor: pointer;
     }
     
     .user-area {

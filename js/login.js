@@ -13,6 +13,11 @@ var users = {
 	
 // Once the website has finished loading...
 $(document).ready(function(){
+	
+	$(".expand-users").click(function(){
+		$(".users-list-wrapper").slideToggle();
+		$(".tri").toggleClass("active");
+	});
 
 	// ...do this stuff.
 	$("#loginform").submit(function(e){
@@ -29,46 +34,36 @@ $(document).ready(function(){
 		// Check inside the `users` array we set up above...
 		if ( users[myUsername] === myPassword ) {
 
-			// Yay, successful login! Show a success message.
-			$(".success").slideDown('slow', function(){
+			// Successful login!
+			// Now, check which user we have and show them the correct info.
+			
+			// VERSION 1, easy to follow
+			switch (myUsername) {
+				case "bob":
+					$(".user-bob").delay(1000).addClass("logged-in");
+					break;
 				
-				// Now, check which user we have and show them the
-				// correct info.
+				case "leslie":
+					$(".user-leslie").delay(1000).addClass("logged-in");
+					break;
 				
-				// VERSION 1, simple to read
-				switch (myUsername) {
-					case "bob":
-						$(".user-bob").delay(1000).addClass("logged-in");
-						break;
-					
-					case "leslie":
-						$(".user-leslie").delay(1000).addClass("logged-in");
-						break;
-					
-					case "mona":
-						$(".user-mona").delay(1000).addClass("logged-in");
-						break;
-					
-					default:
-						$(".nologin").fadeIn('fast');
-				}
+				case "mona":
+					$(".user-mona").delay(1000).addClass("logged-in");
+					break;
 				
-				// VERSION 2, same thing in less code, but more difficult to read!
-				// $(".user-" + myUsername).delay(1000).addClass("logged-in");
-				
-			});
+				default:
+					$(".nologin").fadeIn('fast');
+			}
+			
+			// VERSION 2, same thing in less code. ** More efficient, but harder to read!
+			// $(".user-" + myUsername).delay(1000).addClass("logged-in");
 			
 
-		} else { // Boo, bad user/password. Show a fail message.
+		} else {
 			
+			// Bad user/password combo, so show a fail message.
 			$(".failure").slideDown('slow');
 		
 		}
-	});
-	
-	$(".reset").click(function(e){
-		e.preventDefault();
-		
-		$("#responses *").hide();
 	});
 });
