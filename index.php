@@ -6,7 +6,6 @@
 <title>Passwordy</title>
 
 <meta name="description" content="Simple code demo project for Dave Semaya">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
 <!-- Add normalize.css which enables browsers to render all elements more consistently and in line with modern standards as it only targets particular styles that need normalizing -->
@@ -30,7 +29,7 @@
 
 	<header role="banner">
 	
-	<h1>Sad Picture Happy Picture</h1>
+	<h1>Shiz University</h1>
 	
 	</header>
 	
@@ -43,20 +42,19 @@
 			<!-- The <article> element can be used to enclose content that still makes sense on its own and is therefore "reusable" -->
 			<div id="intro">
 			
-			<h3>(A very fancy website with 3 users)</h3>
+			<h3>Welcome. Please log in.</h3>
 			
 			</article>
 			
 			<!-- The <article> element can be used to enclose content that still makes sense on its own and is therefore "reusable" -->
-			<article id="login-container">
-				
+			<article id="login-container">	
 				<div class="users-container">
-					<p><a href="#" class="expand-users">Usernames/passwords <span class="tri">&rtri;</span></a></p>
+					<p><a href="#" class="expand-users">Usernames/passwords reference<span class="tri">&rtri;</span></a></p>
 					<div class="users-list-wrapper">
 						<ul class="users">
-							<li>bob  --> cat</li>
-							<li>sally  --> field</li>
-							<li>mona --> lisa</li>
+							<li>elphaba  --> magic</li>
+							<li>glinda  --> good</li>
+							<li>dillamond --> goat</li>
 						</ul>
 					</div>
 				</div>
@@ -80,27 +78,40 @@
 			</figure>
 		</div>
 	</div>
+
 	<div id="user-areas">
 		<!-- User information: -->
-		<div class="user-bob user-area">
+		<div class="user-elphaba user-area">
 			<figure>
-				<figcaption>Hi, Bob!</figcaption>
-<!-- 				<img src="multimedia/monsterlisa.jpg" alt="Mona Lisa" /> -->
+				<figcaption>Hi, Elphaba!</figcaption>
+				<img src="multimedia/talia-elphaba.jpg" alt="Elphaba" />
 			</figure>
+
+			<div class="favorites">
+				<!-- placeholder -->
+			</div>
 		</div>
 		
-		<div class="user-sally user-area">
+		<div class="user-glinda user-area">
 			<figure>
-				<figcaption>Hi, sally!</figcaption>
-<!-- 				<img src="multimedia/monsterlisa.jpg" alt="Mona Lisa" /> -->
+				<figcaption>Hi, Glinda!</figcaption>
+				<img src="multimedia/bailey-glinda.jpg" alt="Glinda" />
 			</figure>
+
+			<div class="favorites">
+				<!-- placeholder -->
+			</div>
 		</div>
 		
-		<div class="user-mona user-area">
+		<div class="user-dillamond user-area">
 			<figure>
-				<figcaption>Hi, Mona!</figcaption>
-				<img src="multimedia/monsterlisa.jpg" alt="Mona Lisa" />
+				<figcaption>Hi, Doctor Dillamond!</figcaption>
+				<img src="multimedia/nick-dillamond.jpg" alt="Dillamond" />
 			</figure>
+
+			<div class="favorites">
+				<!-- placeholder -->
+			</div>
 		</div>
 	</div>
 	</div>

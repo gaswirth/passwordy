@@ -8,7 +8,7 @@
    
     }
     /* Default link styling */
-    a:link { color:#fffd8e; text-decoration: none;}
+    a:link { color:purple; text-decoration: none;}
 /*     a:visited { color:#bd02fb; } */
     a:hover, a:focus { color:#000; }
     a:active { color:#fb0e02; }
@@ -19,8 +19,8 @@
    Author's styles
    ---------------------------------------------------------*/
     body {
-		background: #00cbff;
-		color: white;
+		background:lime;
+		color: black;
 		font-family: "Abel", sans-serif;
 		font-size: 32px;
 		text-align: center;
@@ -36,7 +36,7 @@
     .wrap {
 	    width: 100%;	
 	    height: auto;
-	    margin: 0 auto;
+	    margin: 0 auto 2em auto;
 	    position: relative;
     }
     
@@ -88,7 +88,7 @@
     .user-area {
 	    height: 0;
 	    transition: height 0.35s ease;
-	    overflow: hidden;
+        overflow: hidden;
     }
     
     .user-area.logged-in {
@@ -100,7 +100,8 @@
 	    width: auto;
 	    height: auto;
 	    display: block;
-	    margin: 0 auto 1em auto;
+        margin: 0 auto 1em auto;
+        max-width: 400px;
     }
     
     .login-field {
